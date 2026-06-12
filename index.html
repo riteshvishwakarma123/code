@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Developer & Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span></span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1>Ritesh Vishwakarma</h1>
+            <h2>Software Engineer & AI Enthusiast</h2>
+            <p>Building scalable web applications, optimizing systems, and exploring the future of intelligent technology.</p>
+            <div class="hero-btn">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I am a passionate developer focused on creating clean, efficient, and user-centric digital experiences. With a strong background in computer science, software engineering, and automation architectures, I love solving complex technical challenges from backend architecture to continuous integration.</p>
+                <div class="personal-info">
+                    <div class="info-item"><strong>Degree:</strong> B.Tech in Computer Science & AI</div>
+                    <div class="info-item"><strong>Focus:</strong> Backend Dev, DevOps, AI Agent Tools</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">(Click on any card to see details)</p>
+        <div class="skills-grid">
+            <div class="skill-card" data-modal="skill-languages">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Languages</h3>
+                <p>Python, JavaScript, SQL, HTML/CSS</p>
+                <span class="view-more">Read More →</span>
+            </div>
+            <div class="skill-card" data-modal="skill-frameworks">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Frameworks</h3>
+                <p>Django, Express, Node.js</p>
+                <span class="view-more">Read More →</span>
+            </div>
+            <div class="skill-card" data-modal="skill-devops">
+                <i class="fas fa-server skill-icon"></i>
+                <h3>DevOps & Cloud</h3>
+                <p>Git, CI/CD Pipelines, Linux, Docker</p>
+                <span class="view-more">Read More →</span>
+            </div>
+            <div class="skill-card" data-modal="skill-tech">
+                <i class="fas fa-brain skill-icon"></i>
+                <h3>Specialized Tech</h3>
+                <p>AI Agent Implementations, REST APIs, Networking</p>
+                <span class="view-more">Read More →</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">(Click on any project to see details)</p>
+        <div class="projects-grid">
+            <div class="project-card" data-modal="project-atm">
+                <div class="project-info">
+                    <h3>Interactive ATM Web Application</h3>
+                    <p>A web application simulating a realistic, physical ATM hardware interface. Built with smooth state-driven UI logic.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                    <span class="view-more-proj">View Project Details →</span>
+                </div>
+            </div>
+            <div class="project-card" data-modal="project-banking">
+                <div class="project-info">
+                    <h3>Automated Banking & ERD</h3>
+                    <p>Designed a comprehensive relational database schema and backend processing architecture for core banking transactions.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>SQL</span>
+                    </div>
+                    <span class="view-more-proj">View Project Details →</span>
+                </div>
+            </div>
+            <div class="project-card" data-modal="project-devops">
+                <div class="project-info">
+                    <h3>CI/CD DevOps Deployment Pipeline</h3>
+                    <p>Engineered automated code integration and delivery structures, heavily reducing deployment overhead.</p>
+                    <div class="project-tags">
+                        <span>DevOps</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                    <span class="view-more-proj">View Project Details →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <p>Whether you want to discuss a new project, technical collaboration, or just say hello, drop me a message!</p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="skill-languages">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fab fa-python"></i> Languages Proficiency</h2>
+            <hr>
+            <p>Technical depth across core programming and query development environments:</p>
+            <ul>
+                <li><strong>Python:</strong> Advanced scripting, object-oriented implementations, automation routines, and data management configurations.</li>
+                <li><strong>JavaScript:</strong> Async application design, comprehensive DOM manipulation, and state-driven interface structures.</li>
+                <li><strong>SQL:</strong> Optimized query engineering, handling complex relational table setups, joins, and data normalization.</li>
+                <li><strong>HTML5 & CSS3:</strong> Modern semantic structuring, advanced layouts using Flexbox/Grid, and modular asset rendering.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="skill-frameworks">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-code"></i> Frameworks & Web Tech</h2>
+            <hr>
+            <p>Experience in designing robust, responsive web architectures:</p>
+            <ul>
+                <li><strong>Django:</strong> Deploying secure app structures, configuring ORM operations, model design, and handling internal APIs.</li>
+                <li><strong>Node.js & Express:</strong> Scripting efficient server-side processing mechanisms and routing tables.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="skill-devops">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-server"></i> DevOps & System Administration</h2>
+            <hr>
+            <p>Automating build processes and environment integrations:</p>
+            <ul>
+                <li><strong>Linux Environments:</strong> Standard system administration, terminal command proficiency, and environment setups.</li>
+                <li><strong>CI/CD Integration:</strong> Designing structured delivery systems using GitHub Actions configurations.</li>
+                <li><strong>Git Architectures:</strong> Branching workflow coordination, handling version controls, and code integration patterns.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="skill-tech">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-brain"></i> Specialized Architectures</h2>
+            <hr>
+            <p>Exploring complex data structures and automation workflows:</p>
+            <ul>
+                <li><strong>AI Tools & Interfaces:</strong> Implementing agent-based design structures, model interactions, and layout tools.</li>
+                <li><strong>Computer Networking:</strong> Extensive knowledge of OSI model layers, TCP/IP tracking, operational addressing, and infrastructure rules.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="project-atm">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2>Interactive ATM Web Application</h2>
+            <hr>
+            <p><strong>Overview:</strong> Developed an interactive web simulator precisely mapped to model the localized transactional interface of a physical ATM hardware unit.</p>
+            <p><strong>Engineering Context:</strong></p>
+            <ul>
+                <li>Engineered clean functional workflows with semantic HTML5 structuring and dynamic CSS layout blocks.</li>
+                <li>Utilized client-side state logic via JavaScript to handle PIN verification cycles, transaction calculations, and isolated interface adjustments smoothly.</li>
+            </ul>
+            <div class="modal-footer-links">
+                <a href="https://github.com/your-username/atm-web-app" target="_blank" class="btn primary-btn">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="project-banking">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2>Automated Banking System & ERD Design</h2>
+            <hr>
+            <p><strong>Overview:</strong> Managed complex database schemas and transaction logic to process multi-user simulated financial systems cleanly.</p>
+            <p><strong>Engineering Context:</strong></p>
+            <ul>
+                <li>Formulated precise Entity-Relationship Diagrams (ERDs) setting secure structural schemas and entity relationships.</li>
+                <li>Built a Django application pipeline to oversee account tasks, applying fallback exception routines to ensure transaction accuracy.</li>
+            </ul>
+            <div class="modal-footer-links">
+                <a href="https://github.com/your-username/banking-system" target="_blank" class="btn primary-btn">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="project-devops">
+        <div class="modal-box">
+            <span class="close-btn">&times;</span>
+            <h2>CI/CD DevOps Deployment Pipeline</h2>
+            <hr>
+            <p><strong>Overview:</strong> Constructed continuous automated application deployment frameworks to remove deployment operational steps.</p>
+            <p><strong>Engineering Context:</strong></p>
+            <ul>
+                <li>Configured automated workflow templates within GitHub triggers to run execution test files seamlessly upon changes.</li>
+                <li>Wrote automated shell configuration tasks to deploy application changes into Linux servers efficiently.</li>
+            </ul>
+            <div class="modal-footer-links">
+                <a href="https://github.com/your-username/devops-pipeline" target="_blank" class="btn primary-btn">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ritesh Vishwakarma. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/riteshvishwakarma123/test1.git"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ritesh-vishwakarma-b38220325"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
